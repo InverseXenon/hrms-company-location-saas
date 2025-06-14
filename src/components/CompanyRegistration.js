@@ -8,7 +8,7 @@ import save1Icon from '../assets/save_1.svg';
 import companyIcon from '../assets/company.svg';
 import locationsIcon from '../assets/locations.svg';
 import credentialsIcon from '../assets/Asset 455.svg';
-
+import separatorIcon from '../assets/separator_1.svg';
 
 const CompanyRegistration = () => {
   const [activeTab, setActiveTab] = useState('Company');
@@ -34,8 +34,6 @@ const CompanyRegistration = () => {
     locations: [],
     credentials: {}
   });
-
-
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -82,6 +80,11 @@ const CompanyRegistration = () => {
         <div className="form-header">
           <div className="title-section">
             <h2 className="form-title">Company Registration</h2>
+            <img
+              src={separatorIcon}
+              alt="Separator"
+              className="vertical-separator"
+            />
             <div className="tabs">
               <img
                 src={companyIcon}
@@ -128,4 +131,4 @@ const CompanyRegistration = () => {
   );
 };
 
-export default CompanyRegistration; 
+export default CompanyRegistration;

@@ -26,24 +26,28 @@
 
 .title-section {
   display: flex;
-  align-items: center;
-  gap: 25px;
-  height: 40px;
+  align-items: center; /* Vertically center the title, separator, and tabs */
+  gap: 10px; /* Add spacing between elements */
 }
 
 .form-title {
-  color: #4a90e2;
-  font-size: 26px;
-  font-weight: 600;
-  font-family: 'Noto Sans', sans-serif;
-  margin: 0;
-  white-space: nowrap;
+  margin: 0; /* Remove default margin from h2 */
+  font-size: 24px; /* Adjust based on the first image */
+  color: #1a73e8; /* Match the blue color from the first image */
+}
+
+.vertical-separator {
+  width: 2px; /* Adjust based on your SVG's width */
+  height: 30px; /* Adjust based on your SVG's height and the first image */
+  object-fit: contain; /* Ensure the SVG scales properly without distortion */
+  background: none; /* Remove any background that might cause the blue line */
+  border: none; /* Remove any border that might cause the blue line */
+  margin-right: 15px; /* Increase space to the right of the separator */
 }
 
 .tabs {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  gap: 15px; /* Space between tab icons */
 }
 
 .tab {
@@ -114,4 +118,4 @@
 .save-btn-svg:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
-} 
+}
