@@ -84,6 +84,8 @@
   color: #4a90e2;
   font-size: 16px;
   pointer-events: none;
+  width: 16px;
+  height: 16px;
 }
 
 .form-input:focus,

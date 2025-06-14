@@ -2,8 +2,7 @@ import React from 'react';
 import './CompanyForm.css';
 import dropdownIcon from '../assets/dd.svg';
 import Status from '../assets/status.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import dateSelectionIcon from '../assets/Asset_Date_selection.svg';
 
 const CompanyForm = ({ data, onChange }) => {
   const handleChange = (field, value) => {
@@ -42,7 +41,11 @@ const CompanyForm = ({ data, onChange }) => {
               placeholder="dd-mm-yyyy"
             />
             <div className="input-separator"></div>
-            <FontAwesomeIcon icon={faCalendar} className="calendar-icon" />
+            <img 
+              src={dateSelectionIcon} 
+              alt="Date Selection" 
+              className="calendar-icon"
+            />
           </div>
         </div>
 
@@ -119,7 +122,11 @@ const CompanyForm = ({ data, onChange }) => {
               placeholder="dd-mm-yyyy"
             />
             <div className="input-separator"></div>
-            <FontAwesomeIcon icon={faCalendar} className="calendar-icon" />
+            <img 
+              src={dateSelectionIcon} 
+              alt="Date Selection" 
+              className="calendar-icon"
+            />
           </div>
         </div>
 

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import './LocationForm.css';
 import dropdownIcon from '../assets/dd.svg';
 import Status from '../assets/status.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import dateSelectionIcon from '../assets/Asset_Date_selection.svg';
 
 const LocationForm = ({ data, onChange }) => {
   const [locations, setLocations] = useState(data.length > 0 ? data : [{
@@ -82,7 +81,11 @@ const LocationForm = ({ data, onChange }) => {
                   placeholder="dd-mm-yyyy"
                 />
                 <div className="input-separator"></div>
-                <FontAwesomeIcon icon={faCalendar} className="calendar-icon" />
+                <img 
+                  src={dateSelectionIcon} 
+                  alt="Date Selection" 
+                  className="calendar-icon"
+                />
               </div>
             </div>
 
