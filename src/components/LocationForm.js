@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './LocationForm.css';
 import dropdownIcon from '../assets/dd.svg';
 import Status from '../assets/status.svg';
-import locationIcon from '../assets/locationplus.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 const LocationForm = ({ data, onChange }) => {
   const [locations, setLocations] = useState(data.length > 0 ? data : [{
@@ -72,13 +73,17 @@ const LocationForm = ({ data, onChange }) => {
               <label className="form-label">
                 Location Registration Date <span className="required">*</span>
               </label>
-              <input
-                type="text"
-                className="form-input"
-                value={location.locationRegistrationDate}
-                onChange={(e) => handleLocationChange(index, 'locationRegistrationDate', e.target.value)}
-                placeholder="dd-mm-yyyy"
-              />
+              <div className="input-with-icon">
+                <input
+                  type="text"
+                  className="form-input with-separator"
+                  value={location.locationRegistrationDate}
+                  onChange={(e) => handleLocationChange(index, 'locationRegistrationDate', e.target.value)}
+                  placeholder="dd-mm-yyyy"
+                />
+                <div className="input-separator"></div>
+                <FontAwesomeIcon icon={faCalendar} className="calendar-icon" />
+              </div>
             </div>
 
             <div className="form-group">
@@ -100,7 +105,7 @@ const LocationForm = ({ data, onChange }) => {
               </label>
               <div className="status-wrapper">
                 <select
-                  className="form-select"
+                  className="form-select with-separator"
                   value={location.status}
                   onChange={(e) => handleLocationChange(index, 'status', e.target.value)}
                 >
@@ -110,6 +115,7 @@ const LocationForm = ({ data, onChange }) => {
                   <option value="pending">Pending</option>
                 </select>
                 <div className="status-star-12"></div>
+                <div className="input-separator"></div>
                 <img src={Status} alt="Status" className="status-icon-svg" />
               </div>
             </div>
@@ -120,7 +126,7 @@ const LocationForm = ({ data, onChange }) => {
               </label>
               <div className="select-wrapper">
                 <select
-                  className="form-select"
+                  className="form-select with-separator"
                   value={location.country}
                   onChange={(e) => handleLocationChange(index, 'country', e.target.value)}
                 >
@@ -129,6 +135,7 @@ const LocationForm = ({ data, onChange }) => {
                   <option value="usa">USA</option>
                   <option value="uk">UK</option>
                 </select>
+                <div className="input-separator"></div>
                 <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon-svg" />
               </div>
             </div>
@@ -139,7 +146,7 @@ const LocationForm = ({ data, onChange }) => {
               </label>
               <div className="select-wrapper">
                 <select
-                  className="form-select"
+                  className="form-select with-separator"
                   value={location.stateProvince}
                   onChange={(e) => handleLocationChange(index, 'stateProvince', e.target.value)}
                 >
@@ -149,6 +156,7 @@ const LocationForm = ({ data, onChange }) => {
                   <option value="delhi">Delhi</option>
                   <option value="gujarat">Gujarat</option>
                 </select>
+                <div className="input-separator"></div>
                 <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon-svg" />
               </div>
             </div>
@@ -233,10 +241,6 @@ const LocationForm = ({ data, onChange }) => {
           </div>
         </div>
       ))}
-      
-      <button className="add-location-btn" onClick={addLocation}>
-        <img src= {locationIcon} alt="Add Location" className="w-1 h-1" />
-      </button>
     </div>
   );
 };

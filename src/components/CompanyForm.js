@@ -2,6 +2,8 @@ import React from 'react';
 import './CompanyForm.css';
 import dropdownIcon from '../assets/dd.svg';
 import Status from '../assets/status.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 const CompanyForm = ({ data, onChange }) => {
   const handleChange = (field, value) => {
@@ -31,13 +33,17 @@ const CompanyForm = ({ data, onChange }) => {
           <label className="form-label">
             Registration Date <span className="required">*</span>
           </label>
-          <input
-            type="text"
-            className="form-input"
-            value={data.registrationDate}
-            onChange={(e) => handleChange('registrationDate', e.target.value)}
-            placeholder="dd-mm-yyyy"
-          />
+          <div className="input-with-icon">
+            <input
+              type="text"
+              className="form-input with-separator"
+              value={data.registrationDate}
+              onChange={(e) => handleChange('registrationDate', e.target.value)}
+              placeholder="dd-mm-yyyy"
+            />
+            <div className="input-separator"></div>
+            <FontAwesomeIcon icon={faCalendar} className="calendar-icon" />
+          </div>
         </div>
 
         <div className="form-group">
@@ -72,7 +78,7 @@ const CompanyForm = ({ data, onChange }) => {
           </label>
           <div className="select-wrapper">
             <select
-              className="form-select"
+              className="form-select with-separator"
               value={data.constitutionOfBusiness}
               onChange={(e) => handleChange('constitutionOfBusiness', e.target.value)}
             >
@@ -82,6 +88,7 @@ const CompanyForm = ({ data, onChange }) => {
               <option value="partnership">Partnership</option>
               <option value="proprietorship">Proprietorship</option>
             </select>
+            <div className="input-separator"></div>
             <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon-svg" />
           </div>
         </div>
@@ -103,13 +110,17 @@ const CompanyForm = ({ data, onChange }) => {
           <label className="form-label">
             Date of Incorporation <span className="required">*</span>
           </label>
-          <input
-            type="text"
-            className="form-input"
-            value={data.dateOfIncorporation}
-            onChange={(e) => handleChange('dateOfIncorporation', e.target.value)}
-            placeholder="dd-mm-yyyy"
-          />
+          <div className="input-with-icon">
+            <input
+              type="text"
+              className="form-input with-separator"
+              value={data.dateOfIncorporation}
+              onChange={(e) => handleChange('dateOfIncorporation', e.target.value)}
+              placeholder="dd-mm-yyyy"
+            />
+            <div className="input-separator"></div>
+            <FontAwesomeIcon icon={faCalendar} className="calendar-icon" />
+          </div>
         </div>
 
         <div className="form-group">
@@ -118,7 +129,7 @@ const CompanyForm = ({ data, onChange }) => {
           </label>
           <div className="select-wrapper">
             <select
-              className="form-select"
+              className="form-select with-separator"
               value={data.natureOfBusiness}
               onChange={(e) => handleChange('natureOfBusiness', e.target.value)}
             >
@@ -128,6 +139,7 @@ const CompanyForm = ({ data, onChange }) => {
               <option value="service">Service</option>
               <option value="retail">Retail</option>
             </select>
+            <div className="input-separator"></div>
             <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon-svg" />
           </div>
         </div>
@@ -164,7 +176,7 @@ const CompanyForm = ({ data, onChange }) => {
           </label>
           <div className="select-wrapper">
             <select
-              className="form-select"
+              className="form-select with-separator"
               value={data.msmeClassification}
               onChange={(e) => handleChange('msmeClassification', e.target.value)}
             >
@@ -173,6 +185,7 @@ const CompanyForm = ({ data, onChange }) => {
               <option value="small">Small</option>
               <option value="medium">Medium</option>
             </select>
+            <div className="input-separator"></div>
             <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon-svg" />
           </div>
         </div>
@@ -196,7 +209,7 @@ const CompanyForm = ({ data, onChange }) => {
           </label>
           <div className="select-wrapper">
             <select
-              className="form-select"
+              className="form-select with-separator"
               value={data.gstClassification}
               onChange={(e) => handleChange('gstClassification', e.target.value)}
             >
@@ -205,6 +218,7 @@ const CompanyForm = ({ data, onChange }) => {
               <option value="composition">Composition</option>
               <option value="exempt">Exempt</option>
             </select>
+            <div className="input-separator"></div>
             <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon-svg" />
           </div>
         </div>
@@ -241,7 +255,7 @@ const CompanyForm = ({ data, onChange }) => {
           </label>
           <div className="status-wrapper">
             <select
-              className="form-select"
+              className="form-select with-separator"
               value={data.status}
               onChange={(e) => handleChange('status', e.target.value)}
             >
@@ -250,6 +264,7 @@ const CompanyForm = ({ data, onChange }) => {
               <option value="inactive">Inactive</option>
               <option value="pending">Pending</option>
             </select>
+            <div className="input-separator"></div>
             <img src={Status} alt="Status" className="status-icon-svg" />
           </div>
         </div>

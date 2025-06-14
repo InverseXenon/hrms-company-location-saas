@@ -51,6 +51,41 @@
   width: 100%;
 }
 
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-with-icon .form-input.with-separator {
+  padding-right: 60px;
+}
+
+.select-wrapper .form-select.with-separator,
+.status-wrapper .form-select.with-separator {
+  padding-right: 60px;
+}
+
+.input-separator {
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: #ddd;
+  pointer-events: none;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4a90e2;
+  font-size: 16px;
+  pointer-events: none;
+}
+
 .form-input:focus,
 .form-select:focus {
   outline: none;
@@ -86,20 +121,4 @@
 .status-wrapper {
   position: relative;
   width: 100%;
-}
-
-.add-location-btn {
-  background-color: #f0f0f0;
-  padding: 0px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s ease;
-}
-
-.add-location-btn:hover {
-  background-color: #e0e0e0;
 }
