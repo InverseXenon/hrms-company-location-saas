@@ -89,22 +89,17 @@
 }
 
 .add-location-btn {
-  background: #e91e63;
-  color: white;
+  background-color: #f0f0f0;
+  padding: 0px;
+  border-radius: 6px;
   border: none;
-  padding: 12px 25px;
-  border-radius: 25px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: 'Noto Sans', sans-serif;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  transition: background-color 0.2s ease;
 }
 
 .add-location-btn:hover {
-  background: #c2185b;
-} 
+  background-color: #e0e0e0;
+}

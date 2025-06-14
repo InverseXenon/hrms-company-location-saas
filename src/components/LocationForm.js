@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './LocationForm.css';
 import dropdownIcon from '../assets/dd.svg';
 import Status from '../assets/status.svg';
+import locationIcon from '../assets/locationplus.png';
 
 const LocationForm = ({ data, onChange }) => {
   const [locations, setLocations] = useState(data.length > 0 ? data : [{
@@ -234,7 +235,7 @@ const LocationForm = ({ data, onChange }) => {
       ))}
       
       <button className="add-location-btn" onClick={addLocation}>
-        + Location
+        <img src= {locationIcon} alt="Add Location" className="w-1 h-1" />
       </button>
     </div>
   );
