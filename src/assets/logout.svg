@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100.4 26.4">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff00c8;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        mask: url(#mask);
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #ff00c8;
+        stroke-miterlimit: 10;
+        stroke-width: .4px;
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        font-family: NotoSans-Regular, 'Noto Sans';
+        font-size: 15px;
+      }
+
+      .cls-7 {
+        mix-blend-mode: multiply;
+        opacity: .35;
+      }
+
+      .cls-8 {
+        filter: url(#luminosity-invert);
+      }
+    </style>
+    <filter id="luminosity-invert" x="-2.44" y="-2.79" width="105" height="32" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="-2.44" y="-2.79" width="105" height="32" maskUnits="userSpaceOnUse">
+      <g class="cls-8">
+        <image width="105" height="32" transform="translate(-2.44 -2.79)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAAAgCAYAAAAR1VaeAAAACXBIWXMAAAsSAAALEgHS3X78AAAFgUlEQVRoge2ae3OiShDFD8pLcEBR3HU32Xz/r7WVlLUaVJCXIHj/2Oq+Az5ibm7dvRpP1RSWAU3NzzPd0z0KgD3u+l+r86f/gbvelnrpjY7joN/vQ9d1qKqKTqfDQ1EUKIoCAHyVdey9W9B+f3wRovf3+z32+z2qqkJd19jtdijLEpvNBmEYXvw9b0JyHAee52E0GsFxHPR6Pei6Dl3X0e12D0CdgnVroI4BasOp6xp1XaOqKux2O2y3W+R5jiiKEAQBVqsVlsvlm9+l4ExMGo1G+P79OyaTCTzPg+M4sG0bpmnCMAyoqoput8uw2qCA24PTlgyL4MiQCFBZlsjzHGmaIooirFYrBEGA+XyOIAgQRdHJ7zjpJN/38fT0hOl0islkgtFoBNd10e/3G24iUG1InwFUGxBd67rmZa7toiRJsNlssF6vMRgM4DgOhBB4fn4+6aqjkAjQ4+Mjvn371nASQTJNE5qmNdykKAo6nd+5yLkYdUs65SQCRJCKokCWZewkIQRs2+YffLfbBYCjoA4geZ6HHz9+4PHxEQ8PD/j69St834fneXBdF7Ztw7Is6LregHRJXLpVyS4CwE6Sk4WyLBmSbdscNnRdR6fTwX6/byQWshqQHMfBw8MDptMpptMpvnz5gslkAt/3MRwOOSYR/WOA2k46p2uBeCqLO3UfJQzkKJr87XaLLMs4ptPqU1UVQwzD8Dyk4XCI8XgM3/fh+z7G4zHG4zFGoxEGgwH6/T5s24ZhGNA07WzCQLoWEB9RG2I7PslLnpxwAb+B0lJIqTkNEkMSQsDzPAyHw8YYDAZwXbeR2ZGLPgOAS3Ruu9HtdqGqKjRN4x82/b2qKhRFgTRNEccxXNfFYDCAEOI4pH6/DyEEhBCcINCgOESxiH4Fd10mRVEYjqIo7LCiKJDnOc8zJROWZTWe57KQpmkwTROWZaHX6zEUyuTkJe6uf6ZOpwNVVWEYBgzDgGmaME2zMd+yWfg5eiHbkqDQXogyuTugj4tAqaramFtd13nOTdOEbdt/P0MvyJLyOFZRuOvjoiyYhjzPZBTZEAdV8PYe57Ptef6U5I1wWx35Jsrv5Txfvt7170je6NJVrk6UZYmqqvh+hiTvjoui4F3ybrfjcQf1cbWrENvtFkVRcKZHG940TfkZhkRwsizjG7fbLQ8Cdunu+65DUelHntc8z7k6nmUZF2Dlqjjvk+I4RhRFSJIEcRzzBsuyLN4lU8lHfn3XZSIHyVDiOEYcx9hsNjzvNPeyGBL1OMIwRBRFCMOQ63SapnF2V9d1o7Rxqhx0VzPOk4OyLGNDkGPCMMR6veZrHMeNz2nU7qgRRXU6qjBQlbaqKti2jbIsuQJO5aG3Cqu3BvJc61xu+lE8p/hDy1kYhlgul1gul9yhpW5tu7V+AGmxWMB1XfR6PRiGcVBGL4qC63ft8w7vbVNcC7hL4vCppp8MKM9zdlEYhgiCAIvFAvP5HIvFgiG1ddBPCoIAQgiu0bWtmqYpA7y0M0u6Fihv6VzV+9jZBsrc5KWO3PPr1y/MZjPMZjO8vLwcbaMfQIqiCM/Pz7zjpWCXJAmSJEEURdyukGMTQfpMndlTXVkZEqXXtNQlScKx5/X1FfP5HLPZDD9//nxf+5xurqqK6VNfXggBy7IaLQu5fX7KSbcG65ib2ke4qJlHTkrTlJMFgvT6+oqXl5ezp4ZOHkRZLpcoy5KzvfV6zYcm5MYfZX7vbZ9fG7Rzcam93MmgZEiUNGw2G07SVqvV2ZNCwBtHukjUiLJtmzM/WuraiQNw+2fuSOfcRMmW7KY4jhGGIa9Mlx6QvAiSLNd1IYQ42j4nfdaNLpXN2mcdqMGXJAnW6/W7P/fdkO767/U5f/JXpjukK9Bf9kmjYnlzEpMAAAAASUVORK5CYII="/>
+      </g>
+    </mask>
+  </defs>
+  <g class="cls-6">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="_2_copy_3" data-name="2 copy 3">
+        <g>
+          <g>
+            <g>
+              <rect class="cls-3" x=".2" y=".2" width="100" height="26" rx="13" ry="13"/>
+              <rect class="cls-5" x=".2" y=".2" width="100" height="26" rx="13" ry="13"/>
+            </g>
+            <g class="cls-4">
+              <g class="cls-7">
+                <rect class="cls-1" x=".2" y=".2" width="100" height="26" rx="13" ry="13"/>
+                <rect class="cls-5" x=".2" y=".2" width="100" height="26" rx="13" ry="13"/>
+              </g>
+            </g>
+          </g>
+          <g>
+            <text class="cls-2" transform="translate(14.9 17.7) scale(1 .92)"><tspan x="0" y="0">Logout</tspan></text>
+            <g>
+              <polygon class="cls-1" points="77.9 14.97 77.95 9.38 75.87 9.33 78.54 6.2 81.07 9.42 79.09 9.33 79.04 14.97 77.9 14.97"/>
+              <path class="cls-1" d="M78.49,20.2c-3.86,0-7-3.09-7-6.88,0-2.06.98-4.07,2.61-5.36l-.09,1.58c-1.5,1.68-1.86,4.1-.91,6.17.96,2.08,3.07,3.42,5.39,3.42s4.43-1.34,5.39-3.42c.94-2.06.58-4.5-.93-6.2v-1.59c1.61,1.38,2.54,3.41,2.54,5.4,0,3.79-3.14,6.88-7,6.88Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

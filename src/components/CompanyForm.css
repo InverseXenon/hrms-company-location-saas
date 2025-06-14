@@ -1,0 +1,101 @@
+.company-form {
+  width: 100%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 80px;
+}
+
+.form-label {
+  color: #4a90e2;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 4px;
+}
+
+.required {
+  color: #e91e63;
+}
+
+.form-input,
+.form-select {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Noto Sans', sans-serif;
+  transition: border-color 0.3s ease;
+  background: white;
+  height: 44px;
+  width: 100%;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  padding-right: 40px;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-icon-svg {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.status-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.status-star-12 {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  clip-path: polygon(
+    50% 0%, 
+    65% 25%, 
+    98% 35%, 
+    78% 57%, 
+    85% 91%, 
+    50% 78%, 
+    15% 91%, 
+    22% 57%, 
+    2% 35%, 
+    35% 25%
+  );
+} 

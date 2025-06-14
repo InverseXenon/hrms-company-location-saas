@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210.4 26.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        mix-blend-mode: multiply;
+        opacity: .35;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #009696;
+      }
+
+      .cls-7 {
+        fill: none;
+        stroke: #009696;
+        stroke-miterlimit: 10;
+        stroke-width: .4px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        filter: url(#luminosity-invert);
+      }
+
+      .cls-6 {
+        font-family: NotoSans-Regular, 'Noto Sans';
+        font-size: 15px;
+      }
+    </style>
+    <filter id="luminosity-invert" x="-2.44" y="-2.79" width="215" height="32" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="-2.44" y="-2.79" width="215" height="32" maskUnits="userSpaceOnUse">
+      <g class="cls-9">
+        <image width="215" height="32" transform="translate(-2.44 -2.79)" xlink:href="data:image/png;base64,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"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="cls-3">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="_2_copy_3" data-name="2 copy 3">
+        <g>
+          <g>
+            <g>
+              <rect class="cls-1" x=".2" y=".2" width="210" height="26" rx="13" ry="13"/>
+              <rect class="cls-7" x=".2" y=".2" width="210" height="26" rx="13" ry="13"/>
+            </g>
+            <g class="cls-2">
+              <g class="cls-4">
+                <rect class="cls-5" x=".2" y=".2" width="210" height="26" rx="13" ry="13"/>
+                <rect class="cls-7" x=".2" y=".2" width="210" height="26" rx="13" ry="13"/>
+              </g>
+            </g>
+          </g>
+          <text class="cls-6" transform="translate(21.31 17.95)"><tspan class="cls-8" x="0" y="0">W</tspan><tspan x="13.65" y="0">elcome Master Admin</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
