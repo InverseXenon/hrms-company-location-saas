@@ -40,13 +40,6 @@
   white-space: nowrap;
 }
 
-.vertical-separator {
-  width: 3px;
-  height: 35px;
-  background: #4a90e2;
-  border-radius: 2px;
-}
-
 .tabs {
   display: flex;
   align-items: center;

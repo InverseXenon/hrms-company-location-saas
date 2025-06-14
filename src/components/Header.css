@@ -7,8 +7,9 @@
 
 .header-separator {
   width: 100%;
-  height: 4px;
+  height: 25px;
   display: block;
+  padding-top: 20px;
 }
 
 .header-content {

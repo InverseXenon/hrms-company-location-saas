@@ -1,6 +1,7 @@
 import React from 'react';
 import './CompanyForm.css';
 import dropdownIcon from '../assets/dd.svg';
+import Status from '../assets/status.svg';
 
 const CompanyForm = ({ data, onChange }) => {
   const handleChange = (field, value) => {
@@ -249,8 +250,7 @@ const CompanyForm = ({ data, onChange }) => {
               <option value="inactive">Inactive</option>
               <option value="pending">Pending</option>
             </select>
-            <div className="status-star-12"></div>
-            <img src={dropdownIcon} alt="Dropdown" className="dropdown-icon-svg" />
+            <img src={Status} alt="Status" className="status-icon-svg" />
           </div>
         </div>
       </div>

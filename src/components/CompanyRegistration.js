@@ -82,7 +82,6 @@ const CompanyRegistration = () => {
         <div className="form-header">
           <div className="title-section">
             <h2 className="form-title">Company Registration</h2>
-            <div className="vertical-separator"></div>
             <div className="tabs">
               <img
                 src={companyIcon}
